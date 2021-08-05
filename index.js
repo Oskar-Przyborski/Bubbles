@@ -4,11 +4,11 @@ const ctx = canvas.getContext("2d")
 canvas.width = innerWidth
 canvas.height = innerHeight - 60
 
-let gravity = 1
-let friction = 0.9
+let gravity = 0
+let friction = 0.99
 let bubbles = 60
-let radius = 20
-let radiusDiversity = 10
+let radius = 30
+let radiusDiversity = 5
 
 function randomColor(){
     return `hsla(${Math.random() * 360},70%,70%,80%)`
@@ -144,7 +144,7 @@ function init(){
         let x = randomInt(radius,canvas.width-radius)
         let y = randomInt(radius,canvas.height-radius)
         const color = randomColor()
-        const mass = objRadius*0.1
+        const mass = 1
         const velocity = {
             x: randomInt(-5,5),
             y: randomInt(-5,5)
