@@ -11,7 +11,8 @@
         <div>Radius <input class="w-1/3" type="range" min="1" max="250" step="1" value="30" oninput='document.getElementById("radiusValue").innerHTML = this.value; radius=parseInt(this.value)'/> <span id="radiusValue">30</span></div>
         <div>RadiusDiversity <input class="w-1/3" type="range" min="0" max="100" step="1" value="5" oninput='document.getElementById("radiusDiversityValue").innerHTML = this.value; radiusDiversity=parseInt(this.value)'/> <span id="radiusDiversityValue">5</span></div>
         <div>Bubbles <input class="w-1/3" type="range" min="1" max="500" step="1" value="60" oninput='document.getElementById("bubblesValue").innerHTML = this.value; bubbles=parseInt(this.value)'/> <span id="bubblesValue">60</span></div>
-        <button class="m-2" onclick="init()">Regenerate!</button><button class="m-2" onclick="shake()">Shake!</button><button class="m-2" onclick="slow()">Slow!</button>
+        <button class="m-2" onclick="init()">Regenerate!</button><button class="m-2" onclick="shake()">Shake!</button><button class="m-2" onclick="slow()">Slow!</button><br>
+        <img width="24" height="24" src="githubLogo.png" style="display:inline-block"/><a href="https://github.com/oskar-przyborski/bubbles" target="_blank" rel="noopener"> Github</a>
     </body>
     <script src="./index.js"></script>
 </html>
